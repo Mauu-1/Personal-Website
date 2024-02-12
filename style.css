@@ -1,0 +1,237 @@
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+
+.gradient-hover{
+    cursor: pointer;
+    border: none;
+    background-size: 300% 100%;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    color: #607274;
+}
+
+.gradient-hover:hover {
+    background-position: 100% 0;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    color: black;
+}
+
+.gradient-hover.color-1 {
+    background-image: linear-gradient(to right, #040D12, #183D3D, #5C8374);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+.hero-container{
+    width: 100%;
+    justify-content: center;
+    border-color: #93B1A6 !important;
+}
+.profile-pic{
+    height: 300px;
+    width: 300px;
+    
+}
+#circle-div{
+    width: 300px;
+    height: 300px;
+    padding-bottom: 10px;
+}
+.gpa{
+    font-weight: bold;
+    text-decoration: underline;
+}
+.resume-container{
+    justify-content: start;
+    
+}
+.flex-container{
+    display: flex;
+    margin-top: 30px; 
+}
+.projects-container{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 2px;
+}
+.project-section{
+    margin-top: 50px;
+}
+.organa{
+    grid-column: 2;
+    grid-row: 1;
+    text-align: center;
+}
+.NetStud{
+    grid-column: 2;
+    grid-row: 3;
+    text-align: center; 
+}
+.food-check{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.text{
+    margin-top: 40px;
+}
+@media(max-width: 991px){
+    .flex-container{
+        display: flex;
+        margin-top: 30px; 
+        
+    }
+    .projects-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .project-section{
+        margin-top: 50px;
+    }
+    .organa {
+        text-align: center;
+        padding-top: 10px;
+    }
+    .food-check{
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .NetStud{
+        text-align: center;
+        padding-top: 10px;
+        
+    }
+    .text{
+        margin-top: 5px;
+        text-align: justify;
+    }
+}
+
+ /* Button color change */
+ 
+.btn {
+    background: #5C8374;
+    background-image: -webkit-linear-gradient(top, #5C8374);
+    background-image: -moz-linear-gradient(top, #5C8374);
+    background-image: -ms-linear-gradient(top, #5C8374) ;
+    background-image: -o-linear-gradient(top, #5C8374);
+    background-image: linear-gradient(to bottom, #5C8374);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #93B1A6;
+    background-image: -webkit-linear-gradient(top, #93B1A6);
+    background-image: -moz-linear-gradient(top, #93B1A6);
+    background-image: -ms-linear-gradient(top, #93B1A6);
+    background-image: -o-linear-gradient(top, #93B1A6);
+    background-image: linear-gradient(to bottom, #93B1A6);
+    text-decoration: none;
+    color: #000000;
+  }
+  .bold-paragraph{
+    margin-top: 15px;
+    font-weight: bold;
+  }
+  
+  #AboutMe li{
+    background-color: #93B1A6 !important;
+  }
+  /* Footer waves animation*/
+.header {
+  position: relative;
+  background-image: linear-gradient(to right, #040D12, #183D3D, #5C8374);
+  color:white;
+  align-items: baseline;
+}
+
+
+
+
+.flex { /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: flex-end
+}
+
+.waves {
+  position:relative;
+  width: 100%;
+  height:10vh;
+  margin-bottom:-7px; /*Fix for safari gap*/
+  min-height:10px;
+  max-height:20px;
+}
+
+.content {
+  position:relative;
+  text-align:center;
+  background-color: white;
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
+  .content {
+    height:30vh;
+  }
+  h1 {
+    font-size:24px;
+  }
+}
+  .waves {
+    position:relative;
+    
+    height:10vh;
+    
+    max-height:100vh;
+    min-width: 500px;
+  }
+  .waves-container{
+    width: 100vh;
+  }
+ 
+  
+  
